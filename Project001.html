@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peace Publishing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .active {
+            color: red;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #555;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>Peace Publishing</h1>
+</header>
+<header>
+    <hi> •Enrich •Creative •Books </hi>
+</header>
+<!-- Navigation Bar -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Main Content -->
+<main>
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>Peace Publishing Firm, a subsidiary of Peace Publishers Inc. , was established with a dual purpose: to tell authentic African stories and to support aspiring writers. Our mission is to provide a platform for emerging authors to showcase their literary talents and have their voices heard. We are dedicated to nurturing and promoting new talent, ensuring that diverse African narratives reach a global audience. Through our comprehensive support system, we offer resources, guidance, and opportunities for writers to develop their craft and achieve their publishing goals.</p>
+        <img width="200" src="1714815932713.jpg" alt="Sam Afolabi's image">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Sam O. Afolabi, a Nigerian writer, and Publishing consultant, He was born in Kaduna and raised in Ibadan. His first collection of poems appears in notable places including the country school curriculum for senior secondary school and also bagged two publishing deals in the United Kingdom. He lives in Lagos currently working on his new novel.</p>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+        <h2>Our Work</h2>
+        <p>We specialize in:</p>
+        <ul>
+            <li>Web Publishing</li>
+            <li>Book Publishing</li>
+            <li>Music Publishing</li>
+            <li>Content Writing</li>
+        </ul>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Our work rates:</p>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Rate</th>
+            </tr>
+            <tr>
+                <td>Web Publishing</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>Book Publishing</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>Music Publishing</td>
+                <td>$700</td>
+            </tr>
+            <tr>
+                <td>Content Writing</td>
+                <td>$300</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Video Section -->
+    <section>
+        <h2>Watch Our Video</h2>
+        <video width="320" height="240" controls>
+            <source src="WhatsApp Video 2023-05-16 at 9.44.59 AM.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Audio Section -->
+    <section>
+        <h2>Listen To Our Audio</h2>
+        <audio controls>
+            <source src="Youre Gonna Be Okay Lyric Video  Brian  Jenn Johnson  After All These Years.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Peace Incorporation. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript for Scrollspy -->
+<script>
+    window.addEventListener('scroll', function() {
+        var sections = document.querySelectorAll('section');
+        var navLinks = document.querySelectorAll('nav a');
+        var currentSection = '';
+
+        sections.forEach(function(section) {
+            var sectionTop = section.offsetTop;
+            var sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(function(link) {
+            link.classList.remove('active');
+            if (link.getAttribute('href').slice(1) === currentSection) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
